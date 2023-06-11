@@ -1,8 +1,7 @@
-mport sys
-
+#!/usr/bin/python3
 if __name__ == "__main__":
-    result = 0
-    for arg in sys.argv[1:]:
-        result += int(arg)
-
-    print(result)
+    import sys
+    sum = 0
+    for i in range(1, len(sys.argv)):
+        sum += int(sys.argv[i])
+    print("{}".format(sum))
